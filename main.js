@@ -1,4 +1,3 @@
-    // ─── Scroll reveal ───
     const observerOptions = {
         threshold: 0.15,
         rootMargin: '0px 0px -50px 0px'
@@ -20,7 +19,6 @@
         observer.observe(el);
     });
 
-    // ─── Navbar shrink on scroll ───
     let lastScroll = 0;
     window.addEventListener('scroll', () => {
         const nav = document.getElementById('navbar');
@@ -31,7 +29,6 @@
         }
     });
 
-    // ─── Smooth scroll for nav links ───
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -42,7 +39,6 @@
         });
     });
 
-    // ─── Chord box interaction ───
     document.querySelectorAll('.chord-box').forEach(box => {
         box.addEventListener('click', () => {
             box.style.borderColor = 'var(--accent-warm)';
@@ -54,10 +50,10 @@
         });
     });
 
-    // ─── Parallax for hero strings ───
     window.addEventListener('scroll', () => {
         const strings = document.querySelector('.strings');
         if (strings) {
             strings.style.transform = `translateX(-50%) translateY(${window.scrollY * 0.15}px)`;
         }
     });
+
