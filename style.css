@@ -23,7 +23,6 @@
             line-height: 1.7;
         }
 
-        /* ─── Noise overlay ─── */
         body::before {
             content: '';
             position: fixed;
@@ -33,12 +32,10 @@
             z-index: 9999;
         }
 
-        /* ─── Scrollbar ─── */
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: var(--bg-dark); }
         ::-webkit-scrollbar-thumb { background: var(--accent-copper); border-radius: 3px; }
 
-        /* ─── NAV ─── */
         nav {
             position: fixed;
             top: 0; left: 0; right: 0;
@@ -90,7 +87,6 @@
         .nav-links a:hover { color: var(--accent-warm); }
         .nav-links a:hover::after { width: 100%; }
 
-        /* ─── HERO ─── */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -111,7 +107,6 @@
                 radial-gradient(ellipse 80% 40% at 30% 80%, rgba(232, 164, 74, 0.05), transparent);
         }
 
-        /* Animated strings */
         .strings {
             position: absolute;
             top: 0;
@@ -234,7 +229,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* ─── SECTIONS ─── */
         section {
             padding: 6rem 2rem;
             max-width: 1100px;
@@ -265,7 +259,6 @@
             margin-bottom: 3.5rem;
         }
 
-        /* ─── WHY GUITAR 2026 ─── */
         .relevance-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -331,7 +324,6 @@
             line-height: 1.7;
         }
 
-        /* ─── TIPS SECTION ─── */
         .tips-section {
             position: relative;
         }
@@ -391,7 +383,6 @@
             font-size: 0.95rem;
         }
 
-        /* ─── CHORDS SECTION ─── */
         .chords-showcase {
             display: flex;
             gap: 1.5rem;
@@ -456,7 +447,6 @@
 
         .chord-difficulty span.filled { background: var(--accent-warm); }
 
-        /* ─── QUOTE BANNER ─── */
         .quote-banner {
             text-align: center;
             padding: 5rem 2rem;
@@ -491,7 +481,6 @@
             letter-spacing: 0.1em;
         }
 
-        /* ─── GEAR SECTION ─── */
         .gear-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -549,7 +538,6 @@
             font-weight: 700;
         }
 
-        /* ─── FOOTER ─── */
         footer {
             border-top: 1px solid var(--border-subtle);
             padding: 3rem 2rem;
@@ -563,7 +551,6 @@
             display: block;
         }
 
-        /* ─── MOBILE ─── */
         @media (max-width: 768px) {
             nav { padding: 1rem 1.5rem; }
             .nav-links { display: none; }
@@ -579,7 +566,6 @@
             .chord-name { font-size: 1.8rem; }
         }
 
-        /* ─── Hamburger ─── */
         .hamburger {
             display: none;
             flex-direction: column;
@@ -598,4 +584,5 @@
 
         @media (max-width: 768px) {
             .hamburger { display: flex; }
+
         }
